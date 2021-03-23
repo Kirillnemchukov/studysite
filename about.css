@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+li{
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	
+}
+header{
+	background: black;
+	height: 100px;
+	width: 100%;
+}
+main{
+	color: white;
+	padding: 20px;
+	
+}
+main p{
+	color: white;
+	padding: 20px;
+	font-size: 20px;
+}
+main p .right{
+	display: block;
+	justify-content:center;
+}
+
+.slider{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+}
+.main__container{
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+.cells{
+	width: 70%;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.cells__item{
+	padding-top: 40px;
+	width: 30%;
+}
+.cells__item img{
+	width: 180px;
+	height: 180px;
+	transition: all 1s ease;
+}
+h2{
+	margin-top: 20px;
+}
+p{
+	margin-top: 15px;
+	text-align: justify;
+	font-size: 14px;
+}
+.cells__item a{
+	text-decoration: none;
+	color: white;
+}
+.cells__item img:hover{
+	background: #3366CC;
+	border-radius: 60%;
+	box-shadow: 10px 8px 20px -5px #3366CC;
+	transition: all 1s ease;
+	}
+
+.cells__item img.redcolor:hover{
+	background: red;
+	border-radius: 60%;
+	box-shadow: 10px 8px 20px -5px red;
+	transition: all 1s ease;
+	}
+.cells__item img.greycolor:hover{
+	background: #999;
+	border-radius: 60%;
+	box-shadow: 10px 8px 20px -5px #999;
+	transition: all 1s ease;
+	}
+.cells__item img.yellowcolor:hover{
+	background: #FFCC66;
+	border-radius: 60%;
+	box-shadow: 10px 8px 20px -5px #FFCC66;
+	transition: all 1s ease;
+	}
+.cells__item img.pinkcolor:hover{
+	background: #CC9999;
+	border-radius: 60%;
+	box-shadow: 10px 8px 20px -5px #CC9999;
+	transition: all 1s ease;
+	}
+
+@media all and (max-width: 860px){
+	
+	.cells__item{
+		width: 45%;
+	}
+}
+@media all and (max-width: 550px){
+	.cells{
+		flex-direction: column;
+	}
+	.cells__item{
+		width: 100%;
+	}
+	.slider{
+	display: none;
+	}
+	.cells__item img{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	}
+
+}

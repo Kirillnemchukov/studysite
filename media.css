@@ -1,0 +1,41 @@
+.topnav [type="checkbox"]{
+	display: none;
+}
+.topnav label.toggleMenu{
+	background: black;
+	color: white;
+	display: none;
+	padding: 15px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+@media all and (max-width: 550px){
+.topnav{
+	overflow: hidden;
+}
+.topnav ul{
+	display: none;
+	position: relative;
+}
+.topnav label.toggleMenu{
+	display: block;
+}
+input.toggleMenu:checked + label.toggleMenu{
+	border: 3px solid white;
+}
+input.toggleMenu:checked ~ ul{
+	display: block;
+}
+input.toggleMenu:checked ~ ul li{
+	
+	display: block;
+	background: black;
+	padding: 5px 0px 5px 20px;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+	transition: all 1s ease;
+	justify-content: center;
+	line-height: 40px;
+}

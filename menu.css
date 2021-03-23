@@ -1,0 +1,273 @@
+﻿*{
+	margin: 0;
+	padding: 0; 
+}
+a{
+	text-decoration: none;
+}
+
+li{
+	text-decoration: none;
+	list-style: none;
+}
+.slider{
+	display: none;
+}
+/*font-family: 'Bitter', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Noto Serif SC', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Baloo Thambi', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Oswald', sans-serif;*/
+
+body{
+font-family: 'Pathway Gothic One', sans-serif;
+background-color: #000;
+	}
+header{
+	/*position: fixed;
+	top: 0;
+	left: 0;*/
+	background: black;
+	height: 100px;
+	width: 100%;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+.right ul{
+	display: flex;
+	justify-content: center;
+}
+.right ul li a{
+	display: flex;
+	width: 60px;
+	text-align: center;
+	background: black;
+	padding: 14px 30px 14px 30px;
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+	transition: all 1s ease;
+	justify-content: center;
+	line-height: 40px;
+}
+.right li a:hover{
+	background: white;
+	color: black;
+	border-radius: 20px;
+	box-shadow: 1px 5px 40px -5px white;
+	transition: all 1s ease;
+}
+.right ul li{
+	margin-top: 15px;
+	}
+
+.right ul li a i.fa{
+	position: left;
+	margin-top: 7px;
+	text-align: justify;
+	font-size: 20px;
+	padding-right: 10px;
+	justify-content: center;
+	display: flex;
+}
+.topnav ul{
+display: flex;
+justify-content: center;
+}
+
+.topnav ul li a{
+	display: flex;
+	width: 100px;
+	text-align: center;
+	background: black;
+	padding: 14px 20px 14px 20px;
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+	transition: all 1s ease;
+	justify-content: center;
+	line-height: 40px;
+}
+
+.topnav ul li{
+	margin-top: 15px;
+	/*border-top: 1px solid blue;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid blue;*/
+}
+/*.topnav ul li:first-child{
+	border-left: 1px solid blue;
+}
+.topnav ul li:last-child{
+	border-right: 1px solid blue;
+}*/
+.topnav li a:hover{
+	background: white;
+	color: black;
+	border-radius: 20px;
+	box-shadow: 1px 5px 40px -5px white;
+	transition: all 1s ease;
+}
+
+.topnav ul li a i.fa{
+	position: left;
+	margin-top: 7px;
+	text-align: justify;
+	font-size: 20px;
+	padding-right: 10px;
+	justify-content: center;
+	display: flex;
+}
+
+.topnav [type="checkbox"]{
+	display: none;
+}
+.topnav label.toggleMenu{
+	background: black;
+	color: white;
+	display: none;
+	padding: 15px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+footer{
+	/*position: fixed;
+	left: 0;
+	bottom: 0;*/
+	width: 100%;
+	height: auto;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+footer nav{
+	display: flex;
+	justify-content: center;
+}
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+footer p{
+	color: white;
+	text-align: center;
+}
+
+.social img{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: blue;
+	border-radius: 50%
+}
+
+
+.button{
+	display:block;
+	position:fixed;
+    bottom:30px;
+    right:30px;
+    width:64px;
+    height:32px;
+    padding:12px 10px 2px;
+    font-size:16px;
+    background: rgba(0 0 0 0);
+    opacity: 0;
+  
+}
+.button:hover{
+	display: block;
+	position: fixed;
+	text-align: center;
+	bottom:30px;
+    right:30px;
+   	width:64px;
+   	 height:20px;
+    padding:10px 10px 10px 10px;
+    font-size:16px;
+    background: rgba(0, 0, 0, 0.8);
+    color: blue;
+    text-shadow: 5px -5px 10px black, 0em 0em 10em black;
+    opacity: 1;
+
+	}
+
+@media all and (max-width: 940px){
+
+.right ul li a{
+	display: none;
+	width: 0px !important;
+}
+nav{
+	display: flex !important;
+	width: 100vw !important;
+}
+.topnav ul{
+	display: none;
+	position: relative !important;
+	border: none !important;
+}
+.topnav ul li {
+	margin: 0 !important;
+	border: none !important;
+	width: 100vw !important;
+}
+.right{
+	display: none !important;
+	width: 0px !important;
+}
+.topnav ul li a i.fa{
+	display: inline-block !important;
+}
+.topnav label.toggleMenu{
+	display: flex !important;
+}
+input.toggleMenu:checked + label.toggleMenu{
+	border: 3px solid white !important;
+}
+label.toggleMenu:hover{
+	color: blue !important;
+}
+
+input.toggleMenu:checked ~ ul{
+	display: block !important;
+}
+input.toggleMenu:checked ~ ul li a{	
+	display: block !important;
+	width: 100% !important;
+	text-align: left !important;
+}
+i.fa{
+	padding-top: 3px !important;
+	display: block !important;
+	padding-left: 20px !important;
+}
+div a i.fa:hover{
+	color: blue !important;
+}
+label{
+	display: flex !important;
+	justify-content: space-between !important;
+}
+.r{
+	display: flex !important;
+	text-align: justify !important;
+}
+}
